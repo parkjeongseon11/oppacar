@@ -73,8 +73,11 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     <div class="tbl_head01 tbl_wrap">
         <table>
             <colgroup>
+                <?php if ($is_checkbox) { ?>
+                    <col width="6%">
+                <?php }?>
                 <col width="10%">
-                <col width="65%">
+                <col width="*">
                 <col width="10%">
                 <col width="15%">
             </colgroup>
@@ -166,7 +169,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             <li><button type="submit" name="btn_submit" value="선택이동" onclick="document.pressed=this.value" class="btn btn_admin"><i class="fa fa-arrows" aria-hidden="true"></i> 선택이동</button></li>
             <?php } ?>
             <?php if ($list_href) { ?><li><a href="<?php echo $list_href ?>" class="btn_b01 btn"><i class="fa fa-list" aria-hidden="true"></i> 목록</a></li><?php } ?>
-            <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b02 btn"><i class="fa" aria-hidden="true"></i> 글쓰기</a></li><?php } ?>
+            <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b03 btn"><i class="fa" aria-hidden="true"></i> 글쓰기</a></li><?php } ?>
         </ul>
         <?php } ?>
     </div>

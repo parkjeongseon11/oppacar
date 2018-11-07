@@ -168,8 +168,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                                 <strong>●  수집하는 개인 정보 항목</strong>
                                 <em>1. 닉네임, 연락처</em>
                                 <strong>●  수집/이용목적</strong>
-                                <em>1. 닉네임, 연락처 : 상담글에 대한 답변 처리 및 직접 상담 시 활용
-                                <span>2. 암호 : 회원가입 없이 작성 글에 대한 수정 및 삭제 처리 시 필요</span></em>
+                                <em>1. 닉네임, 연락처 : 상담글에 대한 답변 처리 및 직접 상담 시 활용</em>
+                                <em>2. 암호 : 회원가입 없이 작성 글에 대한 수정 및 삭제 처리 시 필요</em>
                                 <strong>●  수집하는 개인 정보의 보유기간</strong>
                                 <em>1. 개인 정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다.</em>
                             </div>

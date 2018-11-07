@@ -65,22 +65,22 @@ include_once(G5_PATH.'/head.php');
 		<div class="cnts">
 			<ul>
 				<li>
-					<a href="<?php echo G5_URL ?>">
+					<a href="<?php echo G5_URL ?>/page/korea_car.php">
 						<img src="<?php echo G5_IMG_URL ?>/korea_car.png" alt="국산 자동차 검색">
 					</a>
 				</li>
 				<li>
-                    <a href="<?php echo G5_URL ?>">
+                    <a href="<?php echo G5_URL ?>/page/foreign_car.php">
                         <img src="<?php echo G5_IMG_URL ?>/imported_car.png" alt="수입 자동차 검색">
                     </a>
 				</li>
                 <li>
-                    <a href="<?php echo G5_URL ?>">
+                    <a href="<?php echo G5_BBS_URL?>/board.php?bo_table=consulting">
                         <img src="<?php echo G5_IMG_URL ?>/car_financing.png" alt="자동차 할부">
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo G5_URL ?>">
+                    <a href="https://www.carhistory.or.kr/main.car?realm=" target="_blank">
                         <img src="<?php echo G5_IMG_URL ?>/serch_link_service.png" alt="사고이력 조회">
                     </a>
                 </li>
@@ -91,14 +91,14 @@ include_once(G5_PATH.'/head.php');
         <div class="sf_title">
             <h2>우리나라차 검색</h2>
             <div class="more_btn">
-                <a href="<?php echo G5_URL ?>">
+                <a href="<?php echo G5_URL ?>/page/korea_car.php">
                   <strong>더보기</strong>
                   <img src="<?php echo G5_IMG_URL ?>/plus.png" alt="플러스">
                 </a>
             </div>
         </div>
         <div class="kor_ctn">
-            <a href="<?php echo G5_URL ?>">
+            <a href="<?php echo G5_URL ?>/page/korea_car.php">
                 <img src="<?php echo G5_IMG_URL ?>/kor_ctn.jpg" alt="우리나라차 리스트">
             </a>
         </div>
@@ -107,21 +107,21 @@ include_once(G5_PATH.'/head.php');
         <div class="sf_title">
             <h2>다른나라차 검색</h2>
             <div class="more_btn">
-                <a href="<?php echo G5_URL ?>">
+                <a href="<?php echo G5_URL ?>/page/foreign_car.php">
                     <strong>더보기</strong>
                    <img src="<?php echo G5_IMG_URL ?>/plus.png" alt="플러스">
                 </a>
             </div>
         </div>
         <div class="kor_ctn">
-            <a href="<?php echo G5_URL ?>">
+            <a href="<?php echo G5_URL ?>/page/foreign_car.php">
                 <img src="<?php echo G5_IMG_URL ?>/other_ctn.jpg" alt="다른나라차 리스트">
             </a>
         </div>
     </div>
-    <div class="address">
+    <div class="address" id="address">
         <div class="ads_txt">
-            <img src="<?php echo G5_IMG_URL ?>/ads_txt.jpg" alt="경기도 수원시 상당구 용정동 697번지, 1685-1845, FAX. 0505. 6548.4868, Email. ceo@flugmedia.kr, 평일 : 10:00 ~ 18:00 / 점심 : 12:00 ~ 13:00">
+            <img src="<?php echo G5_IMG_URL ?>/ads_txt.png" alt="경기도 수원시 상당구 용정동 697번지, 1685-1845, FAX. 0505. 6548.4868, Email. ceo@flugmedia.kr, 평일 : 10:00 ~ 18:00 / 점심 : 12:00 ~ 13:00">
             <div class="ads_sns">
                 <ul>
                     <li>
@@ -147,7 +147,7 @@ include_once(G5_PATH.'/head.php');
                 </ul>
             </div>
         </div>
-        <div id="map" style="width: 50%; height: 380px;"></div>
+        <div id="map" style="width: 50%; height: 380px; min-height:222px;"></div>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPKvi9G5HDMbZlDvohO9gZ-yllTGF3_-w&callback=initMap"
                 async defer>
         </script>

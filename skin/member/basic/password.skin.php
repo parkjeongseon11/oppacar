@@ -12,7 +12,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 
 <!-- 비밀번호 확인 시작 { -->
 <div id="pw_confirm" class="mbskin">
-    <h1><?php echo $g5['title'] ?></h1>
+    <!--<h1><?php echo $g5['title'] ?></h1>-->
     <p>
         <?php if ($w == 'u') { ?>
         <strong>작성자만 글을 수정할 수 있습니다.</strong>

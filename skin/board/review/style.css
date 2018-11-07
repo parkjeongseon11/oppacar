@@ -18,8 +18,8 @@
 #bo_v a.btn_admin:focus, #bo_v a.btn_admin:hover {}
 
 /* 쓰기 버튼 */
-#bo_w .btn_confirm {} /* 서식단계 진행 */
-#bo_w .btn_submit {padding:0 20px}
+#bo_w .btn_confirm {width: auto; display: inline-block; left: 50%; padding-bottom: 60px; margin-left: -161px;} /* 서식단계 진행 */
+#bo_w .btn_submit {padding: 0 20px;}
 #bo_w button.btn_submit {}
 #bo_w fieldset .btn_submit {}
 #bo_w .btn_cancel {}
@@ -129,11 +129,14 @@
 
 .btn_bo_user {float:right;margin:0;padding:0;list-style:none}
 .btn_bo_user li {float:left;margin-left:5px}
+.btn_bo_user li:first-child{margin-left: 0;}
 .btn_bo_adm {float:left}
 .btn_bo_adm li {float:left;margin-right:5px}
 .btn_bo_adm input {padding:0 8px;border:0;background:#d4d4d4;color:#666;text-decoration:none;vertical-align:middle}
 .bo_notice td {background:#e6f8ff !important;border-bottom:1px solid #c3dfe8;}
 .bo_notice td a {font-weight:bold;}
+
+a.ctnbtn{float: right;}
 
 .bo_notice .notice_icon{display:inline-block;background:#4158d1;width:25px;line-height:25px;border-radius:5px;font-weight:normal;color:#fff}
 .td_num strong {color:#000}
@@ -148,14 +151,14 @@
     box-shadow: inset 0 2px 5px  rgba(255,255,255,0.3);}
 
 #bo_list .bo_tit .title_icon{margin-right:2px; vertical-align: text-top;}
-#bo_list .bo_tit .fa-download{width:16px;height:16px;line-height:16px;background:#e89f31;color:#fff;text-align:center;font-size:10px;border-radius:2px;margin-right:2px;vertical-align:middle}
-#bo_list .bo_tit .fa-link{width:16px;height:16px;line-height:16px;background:#ad68d8;color:#fff;text-align:center;font-size:10px;border-radius:2px;margin-right:2px;vertical-align:middle;font-weight:normal}
+#bo_list .bo_tit .fa-download{width:16px;height:16px;line-height:16px;background:#e89f31;color:#fff;text-align:center;font-size:10px;border-radius:2px;margin-right:2px;vertical-align:text-top}
+#bo_list .bo_tit .fa-link{width:16px;height:16px;line-height:16px;background:#ad68d8;color:#fff;text-align:center;font-size:10px;border-radius:2px;margin-right:2px;vertical-align:text-top;font-weight:normal}
 #bo_list .bo_tit .new_icon{display:inline-block;width: 16px;line-height:16px ;font-size:0.833em;color:#ffff00;background:#6db142;text-align:center;border-radius: 2px;vertical-align:middle;margin-right:2px}
 #bo_list .bo_tit .fa-heart{display:inline-block;width: 16px;line-height:16px ;font-size:0.833em;color:#fff;background:#e52955;text-align:center;border-radius: 2px;vertical-align:middle;margin-right:2px;font-weight:normal}
 #bo_list .bo_tit .fa-lock{display: inline-block;line-height: 14px;width: 16px;font-size: 0.833em;text-align: center;border-radius: 2px;font-size: 12px;}
 #bo_list .bo_tit .fa-lock:before{content: url(img/fa-lock.png); vertical-align: middle;}
 
-#bo_sch {float: left; background: #fff; margin: 25px 264px;}
+#bo_sch {float: left; background: #fff; margin: 25px 0 25px -338.5px; position: absolute; left: 50%;}
 #bo_sch:after {display:block;visibility:hidden;clear:both;content:""}
 #bo_sch legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}
 #bo_sch select{height:50px;float:left; border: 1px solid #cdcdcd; padding: 10px;}
@@ -190,7 +193,7 @@ html.no-overflowscrolling #autosave_pop {height:auto;max-height:10000px !importa
 .autosave_del{background:url(./img/close_btn.png) no-repeat 50% 50%;text-indent:-999px;overflow:hidden;height:20px;width:20px;}
 
 /* 게시판 읽기 */
-#bo_v {margin-bottom:20px;padding:20px;background:#fff;box-sizing:border-box}
+#bo_v {margin-bottom:80px;background:#fff;box-sizing:border-box}
 
 #bo_v_table {position:absolute;top:0;right:16px;margin:0;padding:0 5px;height:25px;background:#ff3061;color:#fff;font-weight:bold;line-height:2.2em}
 
@@ -200,27 +203,27 @@ html.no-overflowscrolling #autosave_pop {height:auto;max-height:10000px !importa
     -moz-box-shadow: inset 0 2px 5px rgb(33, 135, 202);
     box-shadow: inset 0 2px 5px rgb(33, 135, 202);
 }
-#bo_v_title .bo_v_tit{display:block;font-size:2em;margin:5px 0 0;word-break:break-all}
+#bo_v_title .bo_v_tit{font-size:1em; font-weight: 400;}
 
-#bo_v_info {padding: 10px 0 15px;margin:0 0 20px;border-bottom:1px solid #ddd;color:#666}
+#bo_v_info {}
 #bo_v_info:after {display:block;visibility:hidden;clear:both;content:""}
 #bo_v_info h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
-#bo_v_info strong {display:inline-block;margin:0 10px 0 0;font-weight:normal}
+#bo_v_info strong {}
 #bo_v_info .sv_member,
 #bo_v_info .sv_guest,
 #bo_v_info .member,
 #bo_v_info .guest {font-weight:bold}
 #bo_v_info .profile_img {}
 #bo_v_info .profile_img img{border-radius:50%}
-#bo_v_info .sv_member{color:#000}
+#bo_v_info .sv_member{color:#555; font-weight: 400;}
 #bo_v_info .if_view{display:inline-block;background:url(./img/icon_view.png) no-repeat 50% 50%;height:15px;width:20px;overflow:hidden;text-indent:-999px;vertical-align:middle;margin-right:3px}
 #bo_v_info .if_comment{display:inline-block;background:url(./img/icon_comment.png) no-repeat 50% 50%;height:15px;width:20px;overflow:hidden;text-indent:-999px;vertical-align:middle;margin-right:3px}
 #bo_v_info .if_date{float:right;margin:0;font-style:italic;color:#888}
 
-#bo_v_file {margin:10px 0;border:1px solid #d4d4d4}
+#bo_v_file {}
 #bo_v_file h2 {padding:10px;background: #f3f3f3}
-#bo_v_file ul {margin:0;padding:5px 0;list-style:none}
-#bo_v_file li {padding:5px 10px;position:relative;}
+#bo_v_file ul {}
+#bo_v_file li {position:relative;}
 #bo_v_file a {display:inline-block;color:#3497d9;text-decoration:underline;word-wrap:break-word}
 #bo_v_file a:focus, #bo_v_file a:hover, #bo_v_file a:active {text-decoration:none}
 #bo_v_file img {float:left;margin:0 10px 0 0}
@@ -244,7 +247,7 @@ html.no-overflowscrolling #autosave_pop {height:auto;max-height:10000px !importa
 #bo_v_bot h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 #bo_v_bot ul {padding:0;list-style:none}
 
-.bo_v_com {margin:20px 0;float:right}
+.bo_v_com {margin: 20px 0 20px -75px; display: inline-block; position: relative; left: 50%;}
 .bo_v_com li {float:left;margin-left:5px}
 
 .bo_v_left {margin:20px 0;float:left}
@@ -252,11 +255,15 @@ html.no-overflowscrolling #autosave_pop {height:auto;max-height:10000px !importa
 
 .bo_v_nb {margin:20px 0;position:relative;clear:both;text-align:left;border-bottom:1px solid #ddd}
 .bo_v_nb:after {display:block;visibility:hidden;clear:both;content:""}
-.bo_v_nb li {border-top:1px solid #ddd;padding:13px;border-left:1px solid #ddd;border-right:1px solid #ddd;}
+.bo_v_nb li {border-top:1px solid #e2e2e2;padding:13px 20px;height: 50px; color:#555;}
 .bo_v_nb li:hover{background:#f6f6f6}
-.bo_v_nb li i{font-size:13px}
-.bo_v_nb li .nb_tit{display:inline-block;padding-right:20px;color:#4567b5}
+.bo_v_nb li i{font-size:20px; margin-right:8px;}
+.bo_v_nb li .nb_tit{display:inline-block;padding-right:86px;color:#4d4d4d}
+.btn_next a{color: #555;}
+
 .bo_v_nb li .nb_date{float:right;color:#888}
+
+
 
 #bo_v_atc {min-height:200px;height:auto !important;height:200px}
 #bo_v_atc_title {position:absolute;font-size:0;line-height:0;overflow:hidden}
@@ -355,19 +362,48 @@ html.no-overflowscrolling #autosave_pop {height:auto;max-height:10000px !importa
 
 
 /*글쓰기*/
-#bo_w .write_div{margin:10px 0;position:relative}
+#bo_w .write_div{/*margin:10px 0;*/position:relative}
+#bo_w .line_weite{border-top: 2px solid #646464; margin: 0; height: 50px;}
 #bo_w .bo_w_info:after {display:block;visibility:hidden;clear:both;content:""}
-#bo_w .bo_w_info .frm_input{float:left;width:33%}
-#bo_w #wr_password{margin:0 0.5%  }
+#bo_w .bo_w_info .frm_input{width: calc(100% - 20px);}
+#bo_w #wr_password{font-family: sans-serif;}
 #bo_w .wr_content.smarteditor2 iframe{background:#fff}
 #bo_w .bo_w_tit{position:relative}
-#bo_w .bo_w_tit .frm_input{padding-right:120px;}
+#bo_w .bo_w_tit .frm_input{}
 #bo_w .bo_w_tit #btn_autosave{position:absolute;top:5px;right:5px;line-height:30px;height:30px;}
 #bo_w .bo_w_link label{position:absolute;top:1px;left:1px;border-radius:3px 0 0 3px;height:38px;line-height:38px;width:40px;background: #eee;text-align:center;color:#888}
 #bo_w .bo_w_link .frm_input{padding-left:50px}
 #bo_w .bo_w_flie .lb_icon{position:absolute;top:0px;left:0px;border-radius:3px 0 0 3px;height:38px;line-height:38px;width:40px;background:#eee;text-align:center;color:#888}
-#bo_w .bo_w_flie .frm_file{padding-left:50px;}
-#bo_w .bo_w_flie .file_wr{border:1px solid #ccc;background:#fff;color:#000;vertical-align:middle;border-radius:3px;padding:5px;height:40px;margin:0}
+
+#bo_w .bo_w_flie .file_wr{border:1px solid #ccc;background:#fff;color:#000;vertical-align:middle;border-radius:3px;padding:5px;height:50px;margin:0;}
 #bo_w .bo_w_flie .frm_input{margin:10px 0 0 }
 #bo_w .bo_w_flie .file_del{position:absolute;top:10px;right:10px;font-size:0.92em;color:#7d7d7d}
 #bo_w .bo_w_select select{border:1px solid #3497d9;height:40px;border-radius:3px}
+
+
+.write_all{display: table; width: 100%;}
+.title{font-weight: 600;color:#4d4d4d; height: 50px; display: table-cell; width: 13.5%; text-align: center; background-color: #f0f0f0; float: left; padding: 12px 0; border-bottom: 1px solid #e2e2e2;}
+.write_cts{display: table; width: calc(100% - 162px); margin-left: 162px!important; height: 50px; border-bottom: 1px solid #e2e2e2; padding: 6px 0 6px 20px;}
+.write_cts2{padding: 12px 20px;}
+.frm_input, .write_div textarea{border: 1px solid #f0f0f0; border-radius:0;width: calc(100% - 20px)!important;}
+
+.title2{height: 213px;}
+.write_div textarea{height: 200px !important; reisize:none;}
+.ctn_flie{border-radius: 0 !important; padding: 0 !important; border: none !important;}
+.write_cts4{padding: 10px 20px; width: calc(100% - 162px); font-size:0.88em;}
+
+.privacy{margin: 30px 30px 10px;}
+.privacy h3{font-size: 1.1em; font-weight: 600; color: #4d4d4d; margin-bottom: 20px;}
+.privacy_box{border: 1px solid #f0f0f0;padding: 30px;overflow: auto; color: #555;}
+.privacy_txt{height: 100px;}
+.privacy_txt p{font-size: 1em; line-height: 1.3; word-break: keep-all; white-space: normal;}
+.privacy_txt strong{font-weight: 400; font-size: 0.88em; display: block; padding: 20px 20px 4px;}
+.privacy_txt em{font-weight: 400; font-size: 0.88em; font-style: normal; padding: 0 40px 10px; display: block;}
+.privacy_txt em span{zxdisplay: block;}
+.agree_checkbox{margin-top: 20px;}
+.check_label span{color:#b11f1f;}
+.line_weite{border-top: 2px solid #646464; margin: 0;}
+
+.title4{height: 266px;}
+.title5{border-top:1px solid #e2e2e2;}
+.write_cts5{border-top:1px solid #e2e2e2;}

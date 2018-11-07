@@ -34,9 +34,9 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 		</div>
 		<aside>
 			<ul>
-				<li><a href="<?php echo G5_URL ?>"><img src="<?php echo G5_IMG_URL ?>/counselling_icon.png" alt="온라인 문의"></a></li>
-				<li><a href="<?php echo G5_URL ?>"><img src="<?php echo G5_IMG_URL ?>/review_icon.png" alt="이용후기"></a></li>
-				<li><a href="<?php echo G5_URL ?>"><img src="<?php echo G5_IMG_URL ?>/location_icon.png" alt="찾아오시는 길"></a></li>
+				<li><a href="<?php echo G5_BBS_URL?>/board.php?bo_table=consulting"><img src="<?php echo G5_IMG_URL ?>/counselling_icon.png" alt="온라인 문의"></a></li>
+				<li><a href="<?php echo G5_BBS_URL?>/board.php?bo_table=review"><img src="<?php echo G5_IMG_URL ?>/review_icon.png" alt="이용후기"></a></li>
+				<li><a href="<?php echo G5_URL ?>/index.php?#address"><img src="<?php echo G5_IMG_URL ?>/location_icon.png" alt="찾아오시는 길"></a></li>
 			</ul>
 		</aside>
 	</div>

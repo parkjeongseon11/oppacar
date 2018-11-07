@@ -16,13 +16,13 @@ if (G5_IS_MOBILE) {
     <div id="aside">
 		<ul>
 			<li>
-				<a href="#">상담<br>문의</a>
+				<a href="<?php echo G5_BBS_URL?>/board.php?bo_table=consulting">상담<br>문의</a>
 			</li>
 			<li>
-				<a href="#">할부<br>문의</a>
+				<a href="<?php echo G5_BBS_URL?>/board.php?bo_table=question">할부<br>문의</a>
 			</li>
 			<li>
-				<a href="#">이용<br>후기</a>
+				<a href="<?php echo G5_BBS_URL?>/board.php?bo_table=review">이용<br>후기</a>
 			</li>
 			<li>
                 <a href="<?php echo G5_URL ?>" class="this_item">
